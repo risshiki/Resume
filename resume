@@ -1,0 +1,236 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{RISHI}{PRASAD}{ \urlstyle{same}\url{http://github.com/risshiki} \\
+\href{mailto:prishiprsd@gmail.com}{prishiprsd@gmail.com} | 7073282672
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{NIIT University}
+\descript{B.Tech in Computer Science \& Engineering}
+\location{Expected May 2017 | Alwar, Rajasthan}
+Conc. in Software Engineering \\
+\location{ Cum. CGPA : 6.48 / 10}
+\sectionsep
+
+\subsection{GG International School}
+\location{Grad. May 2013|  Pune, India}
+\location{Percentage : 82.4\%}
+\sectionsep
+
+\subsection{City International School}
+\location{Grad. May 2011|  Pune, India}
+\location{CGPA : 8.4/10}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+\subsection{Work}
+Github:// \href{https://github.com/risshiki}{\custombold{risshiki}} \\
+\sectionsep
+
+\subsection{Personal}
+Facebook://  \href{https://www.facebook.com/rishi.prasad.56}{\custombold{rishi.prasad.56}} \\
+
+Quora://  \href{https://www.quora.com/profile/Rishi-Prasad}{\custombold{Rishi-Prasad}}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Proficient:}
+Python \textbullet{}   C \textbullet{} OpenCV \\
+\location{Experienced:}
+Java \textbullet{} CSS \textbullet{} HTML  \\ 
+\location{Familiar:}
+Javascript \textbullet{} Android \textbullet{}  MySQL
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HOBBIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{hobbies} 
+
+
+\textbullet{}  Working Out\\
+\textbullet{}  Basketball\\
+\textbullet{}  Swimming\\
+\textbullet{}  Chess \\
+\textbullet{}  Hiking\\
+\textbullet{}  Rafting\\
+\textbullet{}  Reading Non-Fiction\\
+
+
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Experience}
+
+\runsubsection{NIIT Foundation}
+\descript{| Software Engineering Intern }
+\location{Jan 2016 – Current| Gurgaon, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Developed facial detection modules and user management solutions using OpenCV's libraries in Python as part of my R\&D project.
+Currently deploying this modules in addition to other modules developed recently on Live Kiosks.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{IL\&FS}
+\descript{| Database Analyst }
+\location{Mar 2015 – Dec 2015 | Gurgaon, India}
+\begin{tightemize}
+
+
+\item Wrote Dynamic Stored Procedures in MS-SQL safeguarded from SQL injections.
+
+\item Suggested improvements to the database schema to eliminate redundancies
+
+
+\end{tightemize}
+\sectionsep
+
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Personal Projects}
+
+
+
+
+\runsubsection{Scrabble for Multiplayer}
+\descript{| Software Developer}
+\location{July 2014 – Present}
+Modified the Bernstein Hashing Algorithm to create a a hash table of Scrabble's Dictionary.
+\item Designed the UI for the Game along with evaluation modules.\\
+Later, replaced the Hash Table with a Trie to increase efficiency in space.
+
+Built a Word Finder using the Trie for resolving arguments.\\ 
+\item Currently using the trie to build a rudimentary AI\sectionsep
+
+\runsubsection{MediSend}
+\descript{| Software Developer}
+\location{Jan 2016 – May 2016 | }
+Devised schemes for protecting medical data using concepts of Cryptography and Authentication. Implemented the same using Python in a sample GUI Interface. 
+\sectionsep
+
+
+\runsubsection{Mobinder}
+\descript{| Maps API}
+\location{Jan 2015 – May 2015 | }
+Designed the basic data structures using the data retrieved from the Google Maps API. Designed the algorithm to detect location. 
+\sectionsep
+
+\runsubsection{Sudoku Solver}
+\descript{| Algorithm Design}
+\location{Jan 2016 – May 2016 | }
+Designed a backtracking algorithm to solve 1000 Hard Sudoku puzzles in less than a second.. 
+\sectionsep
+
+
+
+
+
+
+\end{minipage} 
+
+
+\end{document}  \documentclass[]{article}
